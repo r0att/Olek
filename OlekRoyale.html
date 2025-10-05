@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Olek Royale</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body background="gb.jpg">
+        <header>
+            <h1>Olek Royale</h1>
+            <h3>"Gra nigdy nie byla tak wciagajaca"</h3>
+        </header>
 
+        <nav>
+            <ul>
+                <li><a href="#info">Informacje o Olku</a></li>
+                <li><a href="#card">Karta Olek</a></li>
+                <li><a href="#used">Karty uzywane</a></li>
+                <li><a href="#deck">Tworzenie deckow</a></li>
+            </ul>
+        </nav>
+
+        <article class="section-grid">
+            <section id="info">Informacje o Olku</section>
+            <section id="card">Karta Olek</section>
+            <section id="used">Karty uzywane przez Olka</section>
+            <section id="deck">Tworzenie deckow</section>
+        </article>
+
+        <div class="blocks">
+            <button onclick="profile_oppopup()"><div class="block stats">Profil</div></button>
+            <div class="block play">Zagraj</div>
+            <a href="Olek_Clicker.html" class="nound" target="_blank"><div class="block clicker">Olek Clicker</div></a>
+        </div>
+
+        <div id="profile_op" class="profile_op">
+            <div class="profile_popup_content">
+                <span onclick="profile_clpopup()" class="profile_close_btn">&times;</span>
+                <p>Dane profilu</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
