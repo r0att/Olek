@@ -9,6 +9,10 @@
   font-family: "CRFont";
 }
 
+ClickerClicker{
+  height:  100%;
+}
+
 body
 {
   background-color: black;
