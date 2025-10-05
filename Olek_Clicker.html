@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+    <style>
+        @font-face
+        {
+            font-family: "CRFont";
+            src: url(clashroyalefont.ttf) format("truetype");
+        }
+        
+        *
+        {
+            font-family: "CRFont";
+        }
+        
+        body
+        {
+            font-size: 16px;
+            margin: 0;
+        }
 
+        h1
+        {
+            margin-bottom: 1px;
+        }
+
+        #buttonClicker
+        {
+            font-size: 30px;
+            padding: 15px;
+            background-color: lightblue;
+            width: 35%;
+            float: left;
+            border: none;
+            height: 100%
+        }
+
+        #buttonClicker:active
+        {
+            transform: scale(0.95);
+        }
+
+        #licznik
+        {
+            margin-bottom: 40px;
+        }
+
+        #clickerMain
+        {
+            width: 45%;
+            float: left;
+            background-color: lightsalmon;
+        }
+
+        #clickerStore
+        {
+            width: 20%;
+            float: left;
+            background-color: lightgreen;
+        }
+
+        #tableMainTop
+        {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #divMain
+        {
+            height: auto;
+            overflow-y: scroll;
+            background-color: lightgray;
+        }
+
+        #divMain > table
+        {
+            width: 100%;
+            text-align: center;
+        }
+
+        .upgMain
+        {
+            height: 100px;
+            border-bottom: 3px dotted black;
+        }
+
+        #tableStoreTop
+        {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #divStore
+        {
+            height: 525px;
+            overflow-y: auto;
+            background-color: lightpink;
+        }
+
+        #divStore > table
+        {
+            width: 100%;
+            text-align: center;
+        }
+
+        .upgStore
+        {
+            height: 60px;
+            border-bottom: 2px dotted black;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <section id="clickerClicker">
+        <button id="buttonClicker" onclick="przytyj()">
+        <h1>Clicker</h1>
+
+        <div id="licznik">Waga Olka: 0</div>
+
+        <img src="olek2.jpg" alt="Olek" width="200px" height="200px">
+
+        
+
+        <script>
+            let wielkoscOlka = 0;
+
+            function przytyj()
+            {
+                wielkoscOlka ++;
+                document.getElementById("licznik").innerText = "Waga Olka: " + wielkoscOlka;
+        
+                const buttonClicker = document.getElementById("buttonClicker");
+
+                if (wielkoscOlka >= 100)
+                {
+                    buttonClicker.classList.add("upgradeRare");
+                }
+            }
+
+        </script>
+        </button>
+        </section>
+
+    <section id="clickerMain">
+        <table id="tableMainTop">
+            <tr>
+                <td>OPTIONS</td>
+                <td rowspan="2">NEWSY</td>
+                <td>INFO</td>
+            </tr>
+            <tr>
+                <td>STATS</td>
+                
+                <td>REBIRTH</td>
+            </tr>
+        </table>
+
+        <div id="divMain">
+            <table id="tableMain">
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+                <tr>
+                    <td class="upgMain">UPGRADY WIZUALNE</td>
+                </tr>
+            </table>
+        </div>
+
+        
+    </section>
+
+    <section id="clickerStore">
+        <table id="tableStoreTop">
+            <tr>
+                <td colspan="4">STORE</td>
+            </tr>
+            <tr>
+                <td>UPG</td>
+                <td>UPG</td>
+                <td>UPG</td>
+                <td>UPG</td>
+            </tr>
+        </table>
+
+        <div id="divStore">
+            <table>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+                <tr>
+                    <td class="upgStore">UPGRADY</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
