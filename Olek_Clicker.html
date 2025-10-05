@@ -12,30 +12,10 @@
     <section id="clickerClicker">
         <button id="buttonClicker" onclick="przytyj()">
         <h1>Clicker</h1>
-
         <div id="licznik">Waga Olka: 0</div>
-
         <img src="olek2.jpg" alt="Olek" width="200px" height="200px">
-
-        <script>
-            let wielkoscOlka = 0;
-
-            function przytyj()
-            {
-                wielkoscOlka ++;
-                document.getElementById("licznik").innerText = "Waga Olka: " + wielkoscOlka;
-        
-                const buttonClicker = document.getElementById("buttonClicker");
-
-                if (wielkoscOlka >= 100)
-                {
-                    buttonClicker.classList.add("upgradeRare");
-                }
-            }
-
-        </script>
         </button>
-        </section>
+    </section>
 
     <section id="clickerMain">
         <table id="tableMainTop">
@@ -130,6 +110,7 @@
         </div>
     </section>
 
+    <script src="script_clicker.js" type="text/javascript"></script>
 
 </body>
 </html>
